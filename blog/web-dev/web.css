@@ -92,15 +92,11 @@ body{
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #f9f9f9;
 }
 
 .left {
     width: 70%;
     padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
 .left h2 {
@@ -136,7 +132,7 @@ body{
 }
 
 .web-dev p {
-    background-color: #eee;
+    
     color: #333;
     padding: 8px 16px;
     border-radius: 20px;
@@ -204,7 +200,7 @@ body{
     }
 
     .des-web p {
-        font-size: 13px;
+        font-size: 20px;
         line-height: 1.5;
     }
 
