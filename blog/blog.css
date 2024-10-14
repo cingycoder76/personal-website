@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", system-ui;
+}
+/* Navbar Styling */
+.navbar {
+    padding: 10px 20px;
+}
+
+.navigation-system {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    border-bottom: 3px solid;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    transition: 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ffffff;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+        width: 100%;
+        border: 1px solid #cccc;
+        z-index: 9999;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.blog-catogrey {
+    padding: 102px 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-bottom: 20px;
+    margin: 17px 0;
+}
+
+.img img {
+    height: 180px;
+    width: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.img img:hover {
+    transform: scale(1.05);
+}
+
+.blog-title {
+    text-align: left;
+}
+
+p.header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p.des {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.box a {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.box a:hover {
+    color: #2c7abd;
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .img img {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+}
+.blog-title p{
+    line-height: 30px;
+}
+hr {
+    padding: 0;
+    margin-top: 14px;
+    width: 62pc;
+}
+/* General footer styles */
+.footer {
+    background-color: royalblue; /* Blue background */
+    padding: 20px 0;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure responsive behavior on small screens */
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    margin-top: 40px;
+}
+
+/* Logo and text */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 20px; /* Extra spacing on the left for alignment */
+}
+
+.copyright {
+    font-size: 14px;
+    color: #f1f1f1;
+    margin-right: 20px; /* Extra spacing on the right for alignment */
+}
+
+/* Logos (social media) */
+.logos {
+    display: flex;
+    gap: 20px; /* More gap between icons */
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logos a {
+    color: #ffffff; /* White color for icons */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and size change */
+    font-size: 22px; /* Slightly larger icon size */
+}
+
+.logos a:hover {
+    color: #ffdd57; 
+    transform: scale(1.1); 
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .logo, .copyright {
+        margin: 10px 0;
+    }
+
+    .logos {
+        justify-content: center;
+        margin: 20px 0;
+    }
+    hr {
+        width: 100%;
+    }
+}
