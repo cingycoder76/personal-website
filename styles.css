@@ -418,3 +418,33 @@ div#contact {
 body.loading .content {
     display: none;
 }
+p.work {
+    font-size: 21px;
+    line-height: 36px;
+    width: 37rem;
+    text-align: left;
+}
+
+@media (max-width: 1024px) {
+    p.work {
+        font-size: 18px;
+        line-height: 32px;
+        width: 90%;  /* Adjust width for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    p.work {
+        font-size: 16px;
+        line-height: 28px;
+        width: 90%;  /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    p.work {
+        font-size: 14px;
+        line-height: 24px;
+        width: 90%;  /* Adjust width for very small screens */
+    }
+}
