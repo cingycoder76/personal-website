@@ -241,6 +241,7 @@ button {
     p.work {
         font-size: 16px;
         line-height: 24px;
+        width: 90%;
     }
 
     .working p {
@@ -270,7 +271,7 @@ button {
     p.work {
         font-size: 16px;
         line-height: 24px;
-        width: 24rem;
+        width: 90%;
     }
 }
 
@@ -377,7 +378,7 @@ div#contact {
     p.work {
         font-size: 16px;
         line-height: 24px;
-        width: 24rem;
+        width: 90%;
     }
 }
 
