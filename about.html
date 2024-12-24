@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Abhaya Bikram Shahi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-gray-800 hover:text-gray-600">
+                Abhaya
+            </a>
+            
+            <!-- Menu Button for Mobile -->
+            <button id="menu-button" class="lg:hidden block text-gray-800 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            
+            <!-- Menu Items -->
+            <ul id="menu" class="hidden lg:flex space-x-8">
+                <a href="index.html" class="block text-lg text-gray-600 hover:text-gray-800">Home</a>
+                <li><a href="about.html" class="text-lg text-gray-600 hover:text-gray-800">About</a></li>
+                <li><a href="Contact.html" class="text-lg text-gray-600 hover:text-gray-800">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden px-6 py-4 space-y-4 bg-gray-50">
+            <a href="index.html" class="block text-lg text-gray-600 hover:text-gray-800">Home</a>
+            <a href="about.html" class="block text-lg text-gray-600 hover:text-gray-800">About</a>
+          
+            <a href="Contact.html" class="block text-lg text-gray-600 hover:text-gray-800">Contact</a>
+        </div>
+    </nav>
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Heading -->
+            <h2 class="text-4xl font-extrabold text-gray-800 text-center mb-8">
+                About Abhaya Bikram Shahi
+            </h2>
+            <p class="text-lg text-gray-600 text-center mb-12">
+                A Junior Web Developer with a Vision to Transform Nepal's Digital Landscape
+            </p>
+
+            <!-- Abhaya's Profile Section -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="flex-shrink-0">
+                    <img src="mer.jpg" alt="Abhaya Bikram Shahi" class="rounded-full w-40 h-40 border-4 border-blue-500 shadow-lg">
+                </div>
+                <div class="max-w-xl text-gray-800">
+                    <h3 class="text-2xl font-bold mb-4">Abhaya Bikram Shahi</h3>
+                    <p class="text-lg mb-4">
+                        Abhaya Bikram Shahi is a 14-year-old junior web developer from Nepal with a passion for technology and entrepreneurship. At a young age, he founded **Abhaya Solutions**, a company focused on delivering high-quality web development and design solutions. His goal is to enhance the digital presence of businesses and individuals by utilizing his expertise in web technologies.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Abhaya's skills span HTML, CSS, and web development frameworks. Despite his young age, his proficiency and dedication have made him a rising star in the Nepali tech community. Currently, he is contributing to **Badimalika Secondary School**, where he works on designing user-friendly apps and websites for the school.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Education and Early Life -->
+            <div class="mt-12">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Early Life & Education</h3>
+                <p class="text-lg text-gray-600 mb-4">
+                    Abhaya comes from a family with a strong political background. Inspired by his father's leadership, he developed an early interest in technology. His journey began with a strong foundation in HTML and CSS, and over time, he continued to build on these skills to expand his expertise.
+                </p>
+            </div>
+
+            <!-- Professional Endeavors -->
+            <div class="mt-12">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Professional Endeavors</h3>
+                <p class="text-lg text-gray-600 mb-4">
+                    As the founder of **Abhaya Solutions**, he focuses on providing impactful web solutions that improve the digital functionality of businesses. His work has garnered recognition within the local tech community, and he continues to strive for excellence in every project he undertakes.
+                </p>
+            </div>
+
+            <!-- Mentorship -->
+            <div class="mt-12">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Mentorship & Influence</h3>
+                <p class="text-lg text-gray-600 mb-4">
+                    Under the mentorship of **Budh Ram Gurung**, affectionately known as **Dhanu Sir**, Abhaya has continued to grow both professionally and personally. His ambition is to make a significant impact on Nepal’s technological progress and contribute to the country's digital growth.
+                </p>
+            </div>
+
+            <!-- Online Presence -->
+            <div class="mt-12">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-4">Online Presence</h3>
+                <p class="text-lg text-gray-600 mb-4">
+                    Abhaya maintains an active online presence through his **GitHub** profile, where he showcases various repositories, including a small blog website for his portfolio. He is constantly exploring new technologies and sharing his projects to connect with the broader tech community.
+                </p>
+                <a href="https://github.com/DeveloperAbhaya" class="text-blue-500 hover:underline" target="_blank">Visit my GitHub Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
